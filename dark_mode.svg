@@ -1,0 +1,101 @@
+<svg width="1483" height="1011" viewBox="0 0 1483 1011" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Pitchfork-and-Torch - GitHub profile</title>
+  <desc id="desc">Neofetch-style system card with proportional ASCII portrait from GitHub avatar</desc>
+  <style>
+    .frame { fill: #0d1117; stroke: #30363d; stroke-width: 1; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 18.0px; }
+    .ascii { fill: #58a6ff; font-size: 16.0px; letter-spacing: 0; }
+    .user { fill: #58a6ff; font-weight: 700; font-size: 21.0px; }
+    .sep { fill: #8b949e; }
+    .key { fill: #ffa657; font-weight: 700; }
+    .val { fill: #c9d1d9; }
+    .head { fill: #8b949e; font-size: 16.0px; }
+  </style>
+
+  <rect class="frame" x="0.5" y="0.5" width="1482" height="1010" rx="12"/>
+
+  <text class="mono ascii" xml:space="preserve">
+    <tspan x="28" y="48.0">@@@@@@@@%%##%###%%##%#**+++======+*+++##%%%#=-==+++=+*+*****#%####%@@@@@</tspan>
+    <tspan x="28" y="65.5">@@@@@@@@%%#########*#****+==+==#%@@@@#**+**+++==+=+=+++*#***#%%%%%@@@@@@</tspan>
+    <tspan x="28" y="83.0">%%@%%@@%#%%#*###**#***%%@@#*%%@@@@@@@@@%*=====++==++*##***####%%%%@@%@@%</tspan>
+    <tspan x="28" y="100.5">@%@%%%%%####*+***##***#%@@@@@@@@@@@@@@@@@@%*====++*#####+***########%%%@</tspan>
+    <tspan x="28" y="118.0">@%%##%##**#+*******%@@@@@@@@@@@@@@@@@@@@@@@@@%+=+#%##%+++######*%@@#@%#@</tspan>
+    <tspan x="28" y="135.5">%%%##%@%*#*#*###+=%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@**####*++##%%#*#%%%#%@@%</tspan>
+    <tspan x="28" y="153.0">@@@@%#**#%#%###**%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#+**###*#####*#%#*#@@@@</tspan>
+    <tspan x="28" y="170.5">@@%%%%***%#####%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%######+*%*+*##*#%%%@</tspan>
+    <tspan x="28" y="188.0">@%%%@#+##**#*#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*++%**#%####%#*###%</tspan>
+    <tspan x="28" y="205.5">#*##%#+***++#@@@@@@@@@@@@%#*+++*%@@@@@@@@@@@@@@@@@@@@%*++=*+*%#**#%###%%</tspan>
+    <tspan x="28" y="223.0">###****+****@@@@@@@@@%#+-:......:=+*#%@@@@@@@@@@@@@@@@@%*=+##*##**#*#%%#</tspan>
+    <tspan x="28" y="240.5">%*#####*++#@@@@@@@@#-................:=+**#%@@@@@@@@@@@@*+*#********##%%</tspan>
+    <tspan x="28" y="258.0">%#***#**++%@@@@@@@#.....................-:=*%@@@@@@@@@@@#**#####***#####</tspan>
+    <tspan x="28" y="275.5">##*#****+*@@@@@@@@-.......................::-#@@@@@@@@@@@#*#############</tspan>
+    <tspan x="28" y="293.0">#*###*+*#%@@@@@@@*............................+@@@@@@@@@@@#*#*##%%%%####</tspan>
+    <tspan x="28" y="310.5">*%#+*#%%%@@@@@@@@=.............................-#@@@@@@@@@@*##*#%@@@@%%#</tspan>
+    <tspan x="28" y="328.0">**##*#%%@@@@@@@@%-...............................+%@@@@@@@@####%%%@@%*##</tspan>
+    <tspan x="28" y="345.5">#*###**%@@@@@@@@#:................................=@@@@@@@@**#%%%%#*##*#</tspan>
+    <tspan x="28" y="363.0">####++=#@@@@@@@@#................................::%@@@@@@@*+*###**#%%#%</tspan>
+    <tspan x="28" y="380.5">#**+*#%@@@@@@@@#*.....::..................::--:::::*@@@@@@@#++***#@%%@@@</tspan>
+    <tspan x="28" y="398.0">+*++*+#@@@@@@@@%+.:==+****+=:..........:+%%%%%%%%+:=@@@@@@@#%**%%%#%@%%%</tspan>
+    <tspan x="28" y="415.5">+++++=#@@@@@@@@@=.::::...:-=:..........:=-:...:+**--%@@@@@%*#**#%@#%%%%%</tspan>
+    <tspan x="28" y="433.0">++==*=*@@@@@@@@%:.....:-==:..............:-==-:.:::-@@@@@@*=+=*#*%#*#%%#</tspan>
+    <tspan x="28" y="450.5">+*+=+==#@@@@@@@+....:::-*#:............--=%%=-+*:.:-@@@@@@+=+++**#**%@@%</tspan>
+    <tspan x="28" y="468.0">**+++=--#@@@@@@:........::.............::.::..:-:..:%@@@@%++++#%####%%%@</tspan>
+    <tspan x="28" y="485.5">**++====-%@@@@%....................................:%@@@@#++++#%%%%%%%%%</tspan>
+    <tspan x="28" y="503.0">#%#*====-=@@@@*...................................::%@@@@*+****#####%###</tspan>
+    <tspan x="28" y="520.5">=+=====-:-#@%@+....................................:%@@@@=+++**##*##**%#</tspan>
+    <tspan x="28" y="538.0">-==-==--:::***+....................................-@@@@*=+*******@@%#%#</tspan>
+    <tspan x="28" y="555.5">==+---::.::*%=+....................................+@@@%==+*###*+#%%#*#@</tspan>
+    <tspan x="28" y="573.0">--::=+=:..:#@@+...............:....=-..............#@@%**=+***#*+#%*+#%%</tspan>
+    <tspan x="28" y="590.5">===--==::::-%@@:..............:....--.............-@%*+++*+==**=++#*+*##</tspan>
+    <tspan x="28" y="608.0">++==:...:-::.=*:.................................:+#=*++=#*+*%#***##*+**</tspan>
+    <tspan x="28" y="625.5">+=--=:.:::......................................::=-=+=--==+++*#*+*##*#*</tspan>
+    <tspan x="28" y="643.0">+--+-..:.....:..................................:-----======****##+***##</tspan>
+    <tspan x="28" y="660.5">:-:-=................................::::......::----===++=+**+++*+****#</tspan>
+    <tspan x="28" y="678.0">--::..................................::.....:::----====+==****#***++***</tspan>
+    <tspan x="28" y="695.5">::-::::.....................................:::-**=--=+===++**###***+***</tspan>
+    <tspan x="28" y="713.0">---:-:...........::...............:::.....::---#@@#===-=++=+**#*##*#**+*</tspan>
+    <tspan x="28" y="730.5">+-::::::.:::.....+%=....................::---==%@@%+==++==*+++***#%%%@%*</tspan>
+    <tspan x="28" y="748.0">--==-:::----:...-#@*..................::--+**+-%@@%#=-=++++***#***%%%@@#</tspan>
+    <tspan x="28" y="765.5">==----=++=-:....:%@#...::...........:::-=##*-::%@%%#-:=====++***##%%%%#*</tspan>
+    <tspan x="28" y="783.0">+=:-=+++++-......=*%....--:.........:-=+##=-::-@@#**-=--==++++*#%%%%**##</tspan>
+    <tspan x="28" y="800.5">==++=+*++-.........*+ ...:-:::::---=+***=::::.-@@*--+--+=+%*#=+#%##**#%%</tspan>
+    <tspan x="28" y="818.0">++++==*#+..........:#= .....::-==++===-:......*@+-:-==+=-=@@@%#***+#%%%@</tspan>
+    <tspan x="28" y="835.5">+****#%@:.......:...-%=......................:*:.:.:=-::::#@@@@@@@@@%%@@</tspan>
+    <tspan x="28" y="853.0">#%@@@%@+......  .....+*=:................... =+ ...--....:-%@@@@@@@@@@@@</tspan>
+    <tspan x="28" y="870.5">%@@@%%%:.. ..-+*##=-...:=+=:................:*=...:=.....:-+@@@@@@@@@@@@</tspan>
+    <tspan x="28" y="888.0">%@@@@@#..:=#@@@@@@@*=:...:+=-:............--::....::   ...:-+@@@@@@@@@@@</tspan>
+    <tspan x="28" y="905.5">%@@@@@=.+@@@@@@#**+***-*:::::-=-:.......:::...::. :=+++-...::#@@@%%@@@@@</tspan>
+    <tspan x="28" y="923.0">%@@@@@:#@@%@@@@%*-==*+++=+-+-+-==-::::..... .....=%@@@@@%+...=@@%#@@@@@@</tspan>
+    <tspan x="28" y="940.5">#%@@@@=*@@##@@@%##*===*=#=+=-#-++:#==+==***+:-==+@@@@%%@@@#:.*@@%%@@@@@@</tspan>
+    <tspan x="28" y="958.0">##@@@@%#@%*#@@@@%@@%#*+*--*:=+:+=-#=##*%#@*@++%%#@@@##*@@@@=:@@%#%@@@@@@</tspan>
+  </text>
+
+  <text class="mono user" x="763" y="56">jon@pitchfork-and-torch</text>
+  <text class="mono sep" x="763" y="84">-----------------------</text>
+
+  <text class="mono" x="763" y="128"><tspan class="key">OS</tspan><tspan class="sep">: </tspan><tspan class="val">Windows 11 · Linux · macOS</tspan></text>
+  <text class="mono" x="763" y="158"><tspan class="key">Host</tspan><tspan class="sep">: </tspan><tspan class="val">jonbailey.xyz</tspan></text>
+  <text class="mono" x="763" y="188"><tspan class="key">Kernel</tspan><tspan class="sep">: </tspan><tspan class="val">Builder · Musician · Operator</tspan></text>
+  <text class="mono" x="763" y="218"><tspan class="key">Uptime</tspan><tspan class="sep">: </tspan><tspan class="val">25 days on GitHub</tspan></text>
+  <text class="mono" x="763" y="248"><tspan class="key">Shell</tspan><tspan class="sep">: </tspan><tspan class="val">PowerShell · bash · zsh</tspan></text>
+  <text class="mono" x="763" y="278"><tspan class="key">IDE</tspan><tspan class="sep">: </tspan><tspan class="val">VS Code · Cursor · Grok</tspan></text>
+  <text class="mono" x="763" y="308"><tspan class="key">Languages.Programming</tspan><tspan class="sep">: </tspan><tspan class="val">Python, JavaScript, Dart, C, Shell</tspan></text>
+  <text class="mono" x="763" y="338"><tspan class="key">Languages.Systems</tspan><tspan class="sep">: </tspan><tspan class="val">PowerShell, TypeScript, HTML/CSS</tspan></text>
+  <text class="mono" x="763" y="368"><tspan class="key">Focus</tspan><tspan class="sep">: </tspan><tspan class="val">Network hardening · Privacy · RF research · AI agents</tspan></text>
+  <text class="mono" x="763" y="398"><tspan class="key">Hobbies</tspan><tspan class="sep">: </tspan><tspan class="val">Music · Flipper Zero · Homelab · Local tools</tspan></text>
+
+  <text class="mono head" x="763" y="452">- Contact ------------------------------------------------</text>
+  <text class="mono" x="763" y="482">
+    <tspan class="key">Website</tspan><tspan class="sep">: </tspan><tspan class="val">https://jonbailey.xyz</tspan>
+  </text>
+  <text class="mono" x="763" y="512">
+    <tspan class="key">GitHub</tspan><tspan class="sep">: </tspan><tspan class="val">@Pitchfork-and-Torch</tspan>
+  </text>
+
+  <circle cx="1393" cy="48" r="10" fill="#ff7b72"/>
+  <circle cx="1417" cy="48" r="10" fill="#d2a8ff"/>
+  <circle cx="1441" cy="48" r="10" fill="#79c0ff"/>
+  <circle cx="1393" cy="72" r="10" fill="#7ee787"/>
+  <circle cx="1417" cy="72" r="10" fill="#ffa657"/>
+  <circle cx="1441" cy="72" r="10" fill="#8b949e"/>
+</svg>
