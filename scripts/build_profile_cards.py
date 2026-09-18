@@ -72,19 +72,38 @@ def ascii(s: str) -> str:
 
 
 def wrap(text: str, width: int = 52, max_lines: int = 2) -> list[str]:
+    """Word-wrap pin descriptions without letting one token blow the SVG width.
+
+    A single URL or unbroken string longer than `width` used to become its own
+    line and overflow the 400px pin card. Break overlong tokens and ellipsize
+    when we still exceed max_lines.
+    """
     words = ascii(text).split()
     lines: list[str] = []
     cur = ""
-    for w in words:
-        trial = (cur + " " + w).strip()
-        if len(trial) <= width:
-            cur = trial
-        else:
-            if cur:
-                lines.append(cur)
-            cur = w
-    if cur:
-        lines.append(cur)
+
+    def flush() -> None:
+        nonlocal cur
+        if cur:
+            lines.append(cur)
+            cur = ""
+
+    for raw in words:
+        parts: list[str] = []
+        w = raw
+        while len(w) > width:
+            parts.append(w[:width])
+            w = w[width:]
+        if w:
+            parts.append(w)
+        for part in parts:
+            trial = (cur + " " + part).strip()
+            if len(trial) <= width:
+                cur = trial
+            else:
+                flush()
+                cur = part
+    flush()
     if len(lines) > max_lines:
         last = lines[max_lines - 1]
         if len(last) > width - 3:
