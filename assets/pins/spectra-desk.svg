@@ -1,0 +1,11 @@
+<svg width="400" height="120" viewBox="0 0 400 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Spectra Desk</title>
+  <rect width="400" height="120" rx="6" fill="#0A0B12"/>
+  <circle cx="28" cy="38" r="8" fill="#00D4E0"/>
+  <circle cx="40" cy="30" r="3" fill="#8B7CFF"/>
+  <text x="56" y="44" fill="#F4EFE4" font-size="16" font-weight="600" font-family="Segoe UI, Ubuntu, Sans-Serif">Spectra Desk</text>
+  <text x="25" y="70" fill="#00D4E0" font-size="12" font-family="Segoe UI, Ubuntu, Sans-Serif">The public web, as a brief.</text>
+  <text x="25" y="86" fill="#8B7CFF" font-size="12" font-family="Segoe UI, Ubuntu, Sans-Serif">v9.0.0 Corroborate. Free Windows OSINT desk.</text>
+  <circle cx="32" cy="106" r="5" fill="#3178C6"/>
+  <text x="42" y="110" fill="#F4EFE4" font-size="12" font-family="Segoe UI, Ubuntu, Sans-Serif">TypeScript</text>
+</svg>
