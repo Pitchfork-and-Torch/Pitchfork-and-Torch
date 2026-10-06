@@ -16,6 +16,9 @@
   <a href="https://github.com/Pitchfork-and-Torch?tab=repositories"><img src="https://img.shields.io/badge/Repos-public%20tools-2F81F7?style=for-the-badge&logo=github&logoColor=white" alt="Repositories" /></a>
   <a href="https://x.com/SuddenlyJon"><img src="https://img.shields.io/badge/X-@SuddenlyJon-000000?style=for-the-badge&logo=x&logoColor=white" alt="@SuddenlyJon" /></a>
   <a href="https://github.com/xai-org/x-algorithm/pull/55"><img src="https://img.shields.io/badge/x--algorithm-PR%2055%20landed-000000?style=for-the-badge&logo=x&logoColor=white" alt="x-algorithm PR 55 landed" /></a>
+  <a href="https://github.com/aws/smithy-go/pull/722"><img src="https://img.shields.io/badge/AWS-smithy--go%20%23722-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="aws/smithy-go #722 merged" /></a>
+  <a href="https://github.com/cloudflare/workers-sdk/pull/16069"><img src="https://img.shields.io/badge/Cloudflare-workers--sdk%20%2316069-F38020?style=for-the-badge&logo=cloudflare&logoColor=white" alt="cloudflare/workers-sdk #16069 merged" /></a>
+  <a href="https://bots.jonbailey.xyz/"><img src="https://img.shields.io/badge/Bots-bots.jonbailey.xyz-111111?style=for-the-badge&logo=robotframework&logoColor=white" alt="bots.jonbailey.xyz" /></a>
 </p>
 
 ---
@@ -29,6 +32,8 @@ I build tools that solve my own problems first: host hardening, legal privacy pa
 - Shipping **GrokLink OS** v3.9.0 Field Card - research RTOS + gated agent for multi-radio portable hardware
 - Day-to-day stack: **NetForge** (tune) -> **Trench Coat** (cloak) -> **Ghost Continuum** (defend)
 - Also: **HumanBotty** (maker body for an AI), **cell** (PSTN CLI), **Grok Orbit** (desktop fleet panel)
+- Upstream hunt: minimal tested fixes into **AWS**, **Cloudflare**, and friends (one bug per PR)
+- Public bot constellation: [bots.jonbailey.xyz](https://bots.jonbailey.xyz/)
 - Languages I actually ship in: **Python · PowerShell · TypeScript · C · Dart · Bash**
 - Bench work: **Flipper Zero** overlays, Cloudflare edge ships, local-first exporters
 - Open an issue if something here fixes your problem too - collaboration welcome on public tools
@@ -39,12 +44,40 @@ I build tools that solve my own problems first: host hardening, legal privacy pa
 
 ## Upstream
 
-On 2026-09-01, xAI closed [x-algorithm #55](https://github.com/xai-org/x-algorithm/pull/55) as completed and shipped a live serving-path fix for a For You bug we reported.
+Surgical fixes in other people's repos. One bug per PR. Failing-test-then-fix when the tree allows it.
+
+### AWS + Cloudflare (Oct 2026)
+
+Four merges in two days:
+
+| When (ET) | Repo | PR | Fix |
+|-----------|------|----|-----|
+| 2026-10-06 ~11:59 | [cloudflare/workers-sdk](https://github.com/cloudflare/workers-sdk) | [#16069](https://github.com/cloudflare/workers-sdk/pull/16069) | `getBranchName` handles unborn and detached git branches |
+| 2026-10-06 ~11:41 | [aws/smithy-go](https://github.com/aws/smithy-go) | [#722](https://github.com/aws/smithy-go/pull/722) | Log the underlying error when response-body close fails |
+| 2026-10-05 ~19:16 | [aws/aws-dotnet-ai](https://github.com/aws/aws-dotnet-ai) | [#81](https://github.com/aws/aws-dotnet-ai/pull/81) | Set `toolResult.status=error` when FunctionResultContent carries an Exception |
+| 2026-10-05 ~17:39 | [aws/aws-durable-execution-sdk-java](https://github.com/aws/aws-durable-execution-sdk-java) | [#774](https://github.com/aws/aws-durable-execution-sdk-java/pull/774) | No NPE in `CallbackFailedException` when the callback has no error |
+
+### xAI
+
+**Serving path.** On 2026-09-01, xAI closed [x-algorithm #55](https://github.com/xai-org/x-algorithm/pull/55) as completed and shipped a live For You fix we reported.
 
 `VFCandidateHydrator` was overwriting in-network verdicts with out-of-network Drop rules when the same post sat in two roles in one batch (a selected parent that was also a sibling reply ancestor).
 
 - Report: [Stop VF hydrator from overwriting in-network verdicts with OON](https://github.com/xai-org/x-algorithm/pull/55)
 - Live landing: [`6384ca7`](https://github.com/xai-org/x-algorithm/commit/6384ca7d2c8570fbc645c20c3291730739ac00ce) (xAI's integrate; they did not GitHub-merge our branch)
+
+**TypeScript SDK.** Reported a `retryBeforeOutput` bug in `@xai-official/sdk` 0.2.1 (non-stream `create()` rejected a valid JSON retry). xAI filed [xai-sdk-ts#9](https://github.com/xai-org/xai-sdk-ts/issues/9) from that report and shipped the fix in [0.2.2](https://github.com/xai-org/xai-sdk-ts/releases/tag/v0.2.2).
+
+### Other recent upstream merges
+
+| Repo | PR | Fix |
+|------|----|-----|
+| [onionshare/onionshare](https://github.com/onionshare/onionshare) | [#2090](https://github.com/onionshare/onionshare/pull/2090) | Warn when Receive Mode save folder is not writable |
+| [redis/redis-py](https://github.com/redis/redis-py) | [#4335](https://github.com/redis/redis-py/pull/4335) | Reject bool and out-of-range Connection port |
+| [pytest-dev/pluggy](https://github.com/pytest-dev/pluggy) | [#731](https://github.com/pytest-dev/pluggy/pull/731) | Reject `PluginManager.register(None)` |
+| [tox-dev/filelock](https://github.com/tox-dev/filelock) | [#739](https://github.com/tox-dev/filelock/pull/739) | Reject invalid `poll_interval` before sleep |
+| [tox-dev/platformdirs](https://github.com/tox-dev/platformdirs) | [#552](https://github.com/tox-dev/platformdirs/pull/552) | Reject app arguments that leave the base directory |
+| [pytoolz/toolz](https://github.com/pytoolz/toolz) | [#635](https://github.com/pytoolz/toolz/pull/635) | Fix `interpose([])` raising `StopIteration` |
 
 ---
 
@@ -67,6 +100,7 @@ On 2026-09-01, xAI closed [x-algorithm #55](https://github.com/xai-org/x-algorit
   <img height="32" src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS" />
   <img height="32" src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
   <img height="32" src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+  <img height="32" src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="AWS" />
   <img height="32" src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Cloudflare" />
   <img height="32" src="https://img.shields.io/badge/Workers-F38020?style=for-the-badge&logo=cloudflareworkers&logoColor=white" alt="Workers" />
   <img height="32" src="https://img.shields.io/badge/Pages-F38020?style=for-the-badge&logo=cloudflarepages&logoColor=white" alt="Pages" />
@@ -156,6 +190,7 @@ On 2026-09-01, xAI closed [x-algorithm #55](https://github.com/xai-org/x-algorit
 | Site | What |
 |------|------|
 | [jonbailey.xyz](https://jonbailey.xyz/) | Constellation hub |
+| [bots.jonbailey.xyz](https://bots.jonbailey.xyz/) | Public bots hub |
 | [grokforge.app](https://grokforge.app/) | GrokForge marketplace |
 | [ascent.jonbailey.xyz](https://ascent.jonbailey.xyz/) | ASCENT wire lab (v2.1.0) |
 | [destroyer.jonbailey.xyz](https://destroyer.jonbailey.xyz/) | Socialism Destroyer (App 2.7.0 / KB 3.18.0) |
@@ -189,7 +224,7 @@ GitHub Stats
 ------------
 Repos: .............  public tools + research kits
 Languages: ........  Python · PowerShell · JS/TS · C · Dart · Bash
-Focus: ............  network hardening · privacy · RF research · field ops · local-first
+Focus: ............  upstream fixes · network hardening · privacy · RF research · field ops · local-first
 ```
 
 <table>
@@ -225,6 +260,7 @@ Focus: ............  network hardening · privacy · RF research · field ops ·
 | | |
 |--|--|
 | **Web** | [jonbailey.xyz](https://jonbailey.xyz) |
+| **Bots** | [bots.jonbailey.xyz](https://bots.jonbailey.xyz/) |
 | **GrokForge** | [grokforge.app](https://grokforge.app/) |
 | **ASCENT** | [ascent.jonbailey.xyz](https://ascent.jonbailey.xyz/) |
 | **GrokLink** | [groklink.jonbailey.xyz](https://groklink.jonbailey.xyz/) |
