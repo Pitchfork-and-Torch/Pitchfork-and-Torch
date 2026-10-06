@@ -18,6 +18,7 @@
   <a href="https://github.com/xai-org/x-algorithm/pull/55"><img src="https://img.shields.io/badge/x--algorithm-PR%2055%20landed-000000?style=for-the-badge&logo=x&logoColor=white" alt="x-algorithm PR 55 landed" /></a>
   <a href="https://github.com/aws/smithy-go/pull/722"><img src="https://img.shields.io/badge/AWS-smithy--go%20%23722-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="aws/smithy-go #722 merged" /></a>
   <a href="https://github.com/cloudflare/workers-sdk/pull/16069"><img src="https://img.shields.io/badge/Cloudflare-workers--sdk%20%2316069-F38020?style=for-the-badge&logo=cloudflare&logoColor=white" alt="cloudflare/workers-sdk #16069 merged" /></a>
+  <a href="https://github.com/tetsuo-ai/agenc-core/pull/2844"><img src="https://img.shields.io/badge/AgenC-agenc--core%20%232844-14B8A6?style=for-the-badge&logo=github&logoColor=white" alt="tetsuo-ai/agenc-core #2844 merged" /></a>
   <a href="https://bots.jonbailey.xyz/"><img src="https://img.shields.io/badge/Bots-bots.jonbailey.xyz-111111?style=for-the-badge&logo=robotframework&logoColor=white" alt="bots.jonbailey.xyz" /></a>
 </p>
 
@@ -72,6 +73,7 @@ Four merges in two days:
 
 | Repo | PR | Fix |
 |------|----|-----|
+| [tetsuo-ai/agenc-core](https://github.com/tetsuo-ai/agenc-core) | [#2844](https://github.com/tetsuo-ai/agenc-core/pull/2844) | Read-only inspection keeps grep/rg `-e1` / git-diff path operands |
 | [onionshare/onionshare](https://github.com/onionshare/onionshare) | [#2090](https://github.com/onionshare/onionshare/pull/2090) | Warn when Receive Mode save folder is not writable |
 | [redis/redis-py](https://github.com/redis/redis-py) | [#4335](https://github.com/redis/redis-py/pull/4335) | Reject bool and out-of-range Connection port |
 | [pytest-dev/pluggy](https://github.com/pytest-dev/pluggy) | [#731](https://github.com/pytest-dev/pluggy/pull/731) | Reject `PluginManager.register(None)` |
